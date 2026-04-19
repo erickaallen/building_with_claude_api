@@ -1,50 +1,39 @@
 [
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "68 kg",
-      "goal": "Marathon training with high carbohydrate intake and optimized hydration timing around a 2-hour morning run",
-      "restriction": "None"
+      "content": "The epistemological foundations of phenomenology and existentialism converge in their critique of Cartesian dualism, yet diverge fundamentally in their treatment of essence and existence. Heidegger's ontological project, grounded in the analysis of Being-in-the-world, challenges both rationalist metaphysics and empiricist naturalism by positioning human consciousness as inherently temporal and situated within historical contexts. Simultaneously, Sartre's emphasis on radical freedom and facticity introduces ethical dimensions absent from earlier phenomenological frameworks, while Merleau-Ponty's investigation of embodied perception dissolves the subject-object dichotomy through the concept of the lived body. These intersecting philosophical movements share a common rejection of transcendental idealism yet articulate distinct positions on the relationship between consciousness, intentionality, and worldly engagement, ultimately reshaping contemporary debates in philosophy of mind, aesthetics, and social theory."
     },
     "solution_criteria": [
-      "Meal plan covers all three meals plus pre/during/post-workout nutrition for the training session",
-      "Total daily carbohydrate intake supports endurance training (approximately 8-10g per kg body weight)",
-      "Includes specific hydration recommendations timed around the 2-hour morning run",
-      "Plan is presented in compact, single-day format with clear timing"
+      "Extracts major philosophical schools and thinkers (phenomenology, existentialism, Heidegger, Sartre, Merleau-Ponty)",
+      "Identifies key conceptual themes (Being-in-the-world, embodied perception, freedom, facticity, intentionality)",
+      "Captures relevant philosophical problems and critiques (Cartesian dualism, transcendental idealism, subject-object dichotomy)",
+      "Distinguishes between overlapping and distinct topics despite their interweaving in the passage"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-performance endurance athlete (marathon runner) requiring high carbohydrate intake and specific hydration timing around training sessions"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\n    ",
+    "scenario": "Testing with a dense philosophy passage containing abstract concepts and overlapping themes to evaluate topic extraction accuracy when subjects are interwoven rather than clearly separated"
   },
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "82 kg",
-      "goal": "Build muscle and increase strength through weightlifting",
-      "restriction": "None"
+      "content": "Recent paleoclimate reconstructions utilizing oxygen isotope ratios (\u03b418O) from ice cores spanning 800,000 years reveal significant correlations between atmospheric CO2 concentrations and global temperature anomalies. Analysis of the East Antarctic Ice Sheet demonstrates that during the Last Glacial Maximum, CO2 levels were approximately 190 ppm compared to pre-industrial values of 280 ppm, corresponding to a 6-8\u00b0C temperature differential. These findings underscore the role of greenhouse gas forcing in glacial-interglacial cycles and provide empirical constraints for climate sensitivity estimates. Additionally, trace gas measurements including methane (CH4) and nitrous oxide (N2O) from trapped air bubbles indicate complex feedback mechanisms involving ocean circulation patterns, albedo effects, and carbon cycle dynamics that amplify initial orbital forcing variations."
     },
     "solution_criteria": [
-      "Meal plan covers 1 full day with breakfast, lunch, dinner, and pre/post-workout meals",
-      "Protein is distributed across all meals (minimum 25g per meal for muscle recovery)",
-      "Pre-workout and post-workout nutrition are specifically addressed for performance and recovery",
-      "Total daily calories and macronutrient targets are appropriate for a strength athlete at this weight"
+      "Extracts all major topics and domain-specific concepts (e.g., paleoclimate, oxygen isotopes, CO2, temperature, glacial cycles, greenhouse gases, feedback mechanisms)",
+      "Identifies both primary topics and related subtopics without excessive fragmentation or redundancy",
+      "Returns output as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) emphasizing protein distribution across meals and pre/post-workout nutrition for muscle recovery"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\n    ",
+    "scenario": "Testing with a brief climate science passage containing domain-specific terminology, quantitative data references, and multiple related subtopics to assess granularity of topic identification"
   },
   {
     "prompt_inputs": {
-      "height": "178",
-      "weight": "72",
-      "goal": "maximize soccer performance and endurance",
-      "restriction": "vegan"
+      "content": "This study employs a comparative historical analysis to examine the causal mechanisms underlying the decline of medieval trade networks in Northern Europe between 1300 and 1450. Using quantitative analysis of merchant records and qualitative examination of political correspondence, we identify three interconnected factors: the fragmentation of political authority following the collapse of the Hanseatic League's monopoly, the emergence of alternative maritime routes circumventing traditional overland paths, and the cumulative effects of plague-induced demographic collapse on consumer demand. Our methodology combines archival research with network analysis to trace how these events reinforced one another, demonstrating that causality operated bidirectionally rather than through linear progression. The findings challenge existing narratives that emphasize single causal factors, instead revealing how systemic vulnerabilities in medieval economic structures created cascading failures across multiple regions."
     },
     "solution_criteria": [
-      "Meal plan covers all meals for one full day (breakfast, lunch, dinner, snacks)",
-      "All foods and ingredients are vegan with no animal products",
-      "Provides adequate protein and carbohydrates to support soccer performance and recovery",
-      "Plan is compact and concise (suitable for quick reference)"
+      "Extracts substantive topics (e.g., trade networks, political authority, maritime routes, demographic collapse) while distinguishing them from methodological approaches (comparative analysis, quantitative analysis, archival research, network analysis)",
+      "Identifies main subject matters and causal elements without over-including contextual descriptors or temporal qualifiers as separate topics",
+      "Produces output as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a sport-specific athlete with dietary restrictions (vegan soccer player) requiring a meal plan that balances performance nutrition while accommodating plant-based requirements"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\n    ",
+    "scenario": "Testing with a historical analysis passage that discusses causality, methodology, and multiple interconnected events to evaluate whether the extraction distinguishes between main topics, methodological approaches, and contextual elements"
   }
 ]
