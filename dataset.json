@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that takes an AWS S3 bucket name and object key as parameters and returns the S3 URI in the format 's3://bucket-name/object-key'"
+    "task": "Extract all S3 bucket names from AWS CloudTrail logs that have object-level logging enabled",
+    "format": "regex",
+    "solution_criteria": "The regex should accurately match S3 bucket ARN patterns in the format 'arn:aws:s3:::bucket-name' and distinguish them from other resource types"
   },
   {
-    "task": "Create a JSON object that represents an AWS IAM policy allowing read-only access to all objects in an S3 bucket named 'my-data-bucket'"
+    "task": "Parse an AWS IAM policy document and create a JSON object that maps each Effect (Allow/Deny) to a list of Actions",
+    "format": "json",
+    "solution_criteria": "The output JSON should have 'Allow' and 'Deny' keys, each containing an array of unique action strings extracted from the input policy"
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 instance IDs, which follow the pattern 'i-' followed by exactly 17 hexadecimal characters (lowercase)"
+    "task": "Write a Python function that takes an AWS EC2 instance ID string and returns a formatted dictionary with the instance metadata extracted from the ID (region, account-id if encoded, and instance hash)",
+    "format": "python",
+    "solution_criteria": "The function should correctly parse instance IDs like 'i-0abcd1234efgh5678' and return a structured dictionary; handles edge cases where IDs may contain region prefixes"
   }
 ]
