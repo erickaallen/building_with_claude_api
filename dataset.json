@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that takes an AWS S3 bucket name and object key as parameters and returns the S3 URI in the format 's3://bucket-name/object-key'"
+  },
+  {
+    "task": "Create a JSON object that represents an AWS IAM policy allowing read-only access to all objects in an S3 bucket named 'my-data-bucket'"
+  },
+  {
+    "task": "Write a regular expression that matches valid AWS EC2 instance IDs, which follow the pattern 'i-' followed by exactly 17 hexadecimal characters (lowercase)"
+  }
+]
